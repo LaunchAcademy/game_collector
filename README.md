@@ -91,8 +91,9 @@ So that I can bask in the glory of my collection.
 
 #### Acceptance Criteria
 - [ ] From the show page for a board game, if a game isn't in my collection, I should see a button to 'add to collection'.
-- [ ] When I
-- [ ] If the game is in my collection, I should see a message on the page that says: 'collected'.
+- [ ] When I add a game to my collection, I should receive a message saying that the board game was added.
+- [ ] From the homepage, I should see a link to 'My Collection' which shows me all the board games in my collection.
+- [ ] If the game is in my collection, I should see a message on the board game show page that says: 'collected'.
 
 ```
 As an administrator of the Game Collector Website
