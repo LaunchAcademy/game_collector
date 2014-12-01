@@ -29,7 +29,7 @@ So that I can have a digital record of it.
 ```
 
 #### Acceptance Criteria
-- [x] I must enter a name, publisher, description, and release_date
+- [ ] I must enter a name, publisher, description, and release_date
 - [ ] If all fields are complete, I am told that my board game has been saved
 - [ ] If a field is incomplete, I am given an error message and brought back to the input form.
 - [ ] If a board game already exists in the database, I am given an error message.
@@ -42,7 +42,7 @@ So that I can learn about awesome games.
 ```
 
 #### Acceptance Criteria
-* If I navigate to the /board_games path, I should see a list of games.
+- [ ] If I navigate to the /board_games path, I should see a list of games.
 
 ### View the Details of a Board Game
 ```
@@ -52,8 +52,8 @@ So that I can find out what I want to purchase next.
 ```
 
 #### Acceptance Criteria
-* From the board games index page, I should be able to click on a link for a board game.
-* I should see the name, publisher, description, and release date of the board game.
+- [ ] From the board games index page, I should be able to click on a link for a board game.
+- [ ] I should see the name, publisher, description, and release date of the board game.
 
 ### User Sign Up
 ```
@@ -63,11 +63,11 @@ So that I can use all of its awesome features.
 ```
 
 #### Acceptance Criteria
-* There is a link to 'Sign Up' on the homepage.
-* If I fill in my first name, last name, email, password, and password confirmation correctly, I am greeted with a confirmation message that my account has been created.
-* If the password and password confirmation fields do not match, I am given an error message.
-* If my email already exists in the database, I am given a message that tells me I have already registered.
-* If my email is not formatted correctly, I am given an error message.
+- [ ] There is a link to 'Sign Up' on the homepage.
+- [ ] If I fill in my first name, last name, email, password, and password confirmation correctly, I am greeted with a confirmation message that my account has been created.
+- [ ] If the password and password confirmation fields do not match, I am given an error message.
+- [ ] If my email already exists in the database, I am given a message that tells me I have already registered.
+- [ ] If my email is not formatted correctly, I am given an error message.
 
 ### User Sign In
 ```
@@ -77,10 +77,10 @@ So that I can see my digital collection of board games.
 ```
 
 #### Acceptance Criteria
-* There is a link to 'Sign In' on the homepage.
-* If I fill in my email and password correctly, I am greeted and redirected to my board game collection.
-* If I input my password incorrectly, I am given an error message.
-* If I am signed in, I should not see a link to 'Sign Up'.
+- [ ] There is a link to 'Sign In' on the homepage.
+- [ ] If I fill in my email and password correctly, I am greeted and redirected to my board game collection.
+- [ ] If I input my password incorrectly, I am given an error message.
+- [ ] If I am signed in, I should not see a link to 'Sign Up'.
 
 ### Add a Board Game to My Collection
 ```
@@ -90,9 +90,9 @@ So that I can bask in the glory of my collection.
 ```
 
 #### Acceptance Criteria
-* From the show page for a board game, if a game isn't in my collection, I should see a button to 'add to collection'.
-* When I
-* If the game is in my collection, I should see a message on the page that says: 'collected'.
+- [ ] From the show page for a board game, if a game isn't in my collection, I should see a button to 'add to collection'.
+- [ ] When I
+- [ ] If the game is in my collection, I should see a message on the page that says: 'collected'.
 
 ```
 As an administrator of the Game Collector Website
