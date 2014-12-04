@@ -1,0 +1,15 @@
+<%= form_for @board_game do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %><br/>
+
+  <%= f.label :publisher %>
+  <%= f.text_field :publisher %><br/>
+
+  <%= f.label :description %>
+  <%= f.text_field :description %><br/>
+
+  <%= f.label :release_date %>
+  <%= f.date_select :release_date %><br/>
+
+  <%= f.submit "Create Board Game" %>
+<% end %>
