@@ -100,3 +100,7 @@ As an administrator of the Game Collector Website
 I want to see a list of users and email addresses
 So that I can view who is using my website.
 ```
+
+## Videos
+* [Intro](https://vimeo.com/113656290)
+* [Part 1](https://vimeo.com/113656409)
