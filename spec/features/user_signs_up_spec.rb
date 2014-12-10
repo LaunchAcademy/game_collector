@@ -11,7 +11,7 @@ feature "Input a Board Game", %q(
   - [x] If I fill in my first name, last name, email, password, and password confirmation correctly, I am greeted with a confirmation message that my account has been created.
   - [x] If the password and password confirmation fields do not match, I am given an error message.
   - [x] If my email already exists in the database, I am given a message that tells me I have already registered.
-  - [ ] If my email is not formatted correctly, I am given an error message.
+  - [x] If my email is not formatted correctly, I am given an error message.
 ) do
 
   scenario "user provides valid information" do
@@ -26,6 +26,8 @@ feature "Input a Board Game", %q(
     click_on "Sign up"
 
     expect(page).to have_content "Welcome! Your account has been created."
+    expect(page).to_not have_link "Sign Up"
+    expect(page).to have_link "Sign Out"
   end
 
   scenario "password fields do not match" do
