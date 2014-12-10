@@ -1,4 +1,6 @@
 class BoardGamesController < ApplicationController
+  before_action :authenticate_user!, except: :index
+
   def new
     @board_game = BoardGame.new
   end
