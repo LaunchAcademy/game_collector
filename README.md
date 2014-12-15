@@ -1,6 +1,6 @@
 # Game Collector
 
-An app that tracks users and their board game collections.
+A Rails application that tracks users and their board game collections.
 
 
 ## ER Diagram
@@ -18,8 +18,18 @@ An app that tracks users and their board game collections.
 ```
 created with [asciiflow](http://asciiflow.com/)
 
+## Description
 
-## User Stories
+The screencasts provided will walk you through the development of the following user stories. We will cover TDD with Capybara, as well as user authentication with the Devise gem.
+
+## Videos
+* [Intro](https://vimeo.com/113656290)
+* [Part 1](https://vimeo.com/114592873)
+* [Part 2](https://vimeo.com/114592874)
+* [Part 3](https://vimeo.com/114592875)
+* [Part 4](https://vimeo.com/114592876)
+
+## User Stories (Screencasted)
 
 ### Input a Board Game
 ```
@@ -43,17 +53,6 @@ So that I can learn about awesome games.
 
 #### Acceptance Criteria
 - [ ] If I navigate to the /board_games path, I should see a list of games.
-
-### View the Details of a Board Game
-```
-As a visitor of the Game Collector website
-I want to see the details of a board game
-So that I can find out what I want to purchase next.
-```
-
-#### Acceptance Criteria
-- [ ] From the board games index page, I should be able to click on a link for a board game.
-- [ ] I should see the name, publisher, description, and release date of the board game.
 
 ### User Sign Up
 ```
@@ -82,6 +81,20 @@ So that I can see my digital collection of board games.
 - [ ] If I input my password incorrectly, I am given an error message.
 - [ ] If I am signed in, I should not see a link to 'Sign Up'.
 
+
+## User Stories (Complete these on your own)
+
+### View the Details of a Board Game
+```
+As a visitor of the Game Collector website
+I want to see the details of a board game
+So that I can find out what I want to purchase next.
+```
+
+#### Acceptance Criteria
+- [ ] From the board games index page, I should be able to click on a link for a board game.
+- [ ] I should see the name, publisher, description, and release date of the board game.
+
 ### Add a Board Game to My Collection
 ```
 As a Board Game Collector
@@ -95,12 +108,15 @@ So that I can bask in the glory of my collection.
 - [ ] From the homepage, I should see a link to 'My Collection' which shows me all the board games in my collection.
 - [ ] If the game is in my collection, I should see a message on the board game show page that says: 'collected'.
 
+
+### Admin Views a List of Users
 ```
 As an administrator of the Game Collector Website
 I want to see a list of users and email addresses
 So that I can view who is using my website.
 ```
 
-## Videos
-* [Intro](https://vimeo.com/113656290)
-* [Part 1](https://vimeo.com/113656409)
+#### Acceptance Criteria
+- [ ] I can see a link to view a list of users from the homepage
+- [ ] The page should contain the user's full name, email address, role, and the number of board games in their collection.
+- [ ] If I am not an administrator, I should be redirected to the homepage.
