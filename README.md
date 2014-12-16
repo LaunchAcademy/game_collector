@@ -18,18 +18,7 @@ A Rails application that tracks users and their board game collections.
 ```
 created with [asciiflow](http://asciiflow.com/)
 
-## Description
-
-The screencasts provided will walk you through the development of the following user stories. We will cover TDD with Capybara, as well as user authentication with the Devise gem.
-
-## Videos
-* [Intro](https://vimeo.com/113656290)
-* [Part 1](https://vimeo.com/114592873)
-* [Part 2](https://vimeo.com/114592874)
-* [Part 3](https://vimeo.com/114592875)
-* [Part 4](https://vimeo.com/114592876)
-
-## User Stories (Screencasted)
+## User Stories
 
 ### Input a Board Game
 ```
@@ -80,9 +69,6 @@ So that I can see my digital collection of board games.
 - [ ] If I fill in my email and password correctly, I am greeted and redirected to my board game collection.
 - [ ] If I input my password incorrectly, I am given an error message.
 - [ ] If I am signed in, I should not see a link to 'Sign Up'.
-
-
-## User Stories (Complete these on your own)
 
 ### View the Details of a Board Game
 ```
