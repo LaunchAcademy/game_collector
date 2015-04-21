@@ -1,5 +1,6 @@
 class BoardGamesController < ApplicationController
-  before_action :set_board_game, only: [:show, :edit, :update, :destroy]
+  before_action :set_board_game,
+    only: [:show, :edit, :update, :destroy]
 
   def index
     @board_games = BoardGame.all
@@ -17,9 +18,9 @@ class BoardGamesController < ApplicationController
 
   def create
     @board_game = BoardGame.new(board_game_params)
-
     if @board_game.save
-      redirect_to board_games_path, notice: 'Board game was successfully created.'
+      redirect_to board_games_path,
+        notice: 'Board game was successfully created.'
     else
       render :new
     end
@@ -27,7 +28,8 @@ class BoardGamesController < ApplicationController
 
   def update
     if @board_game.update(board_game_params)
-      redirect_to @board_game, notice: 'Board game was successfully updated.'
+      redirect_to @board_game,
+        notice: 'Board game was successfully updated.'
     else
       render :edit
     end
@@ -35,7 +37,8 @@ class BoardGamesController < ApplicationController
 
   def destroy
     @board_game.destroy
-    redirect_to board_games_url, notice: 'Board game was successfully destroyed.'
+    redirect_to board_games_url,
+      notice: 'Board game was successfully destroyed.'
   end
 
   private
@@ -44,6 +47,14 @@ class BoardGamesController < ApplicationController
     end
 
     def board_game_params
-      params.require(:board_game).permit(:name, :publisher, :description, :release_date)
+      params.require(:board_game).
+        permit(
+          :name,
+          :publisher,
+          :description,
+          :release_date,
+          :min_players,
+          :max_players
+        )
     end
 end
